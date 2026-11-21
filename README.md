@@ -1,7 +1,7 @@
 # Zásilka č. 37
 
 Interaktivní narozeninové přání pro Tomáše k 37. narozeninám. Jedna stránka pro mobil, projde se za 3–4 minuty:
-celní kontrola → hádanka (zima / teplo / přihořívá / hoří) → protokol o zabavení → jeho svět → stůl → konec.
+celní kontrola → hádanka (zima / teplo / přihořívá / hoří) → přetahovaná o lano → protokol o zabavení → jeho svět → stůl → konec.
 
 ## Spuštění
 
@@ -18,11 +18,13 @@ a v telefonu otevřít `http://<IP počítače>:8737`.
 
 ## Sdílení (GitHub Pages)
 
-Po nahrání do repozitáře a zapnutí Pages (Settings → Pages → Deploy from a branch → `main` / root) běží přání na adrese
-`https://<účet>.github.io/<repozitář>/`. Příjemci stačí klepnout na odkaz, nic dalšího nepotřebuje.
+Přání běží na adrese **https://srumiq.github.io/zasilka-37/**. Příjemci stačí klepnout na odkaz, nic dalšího nepotřebuje.
+
+Hostuje ho GitHub Pages z větve `main` (Settings → Pages → Deploy from a branch → `main` / root).
+Každý push do `main` se na adrese projeví zhruba do minuty.
 
 - Stránka má `noindex`, takže ji vyhledávače nezařadí. Kdo ale zná odkaz, ten ji otevře.
-- Přípona `#stul` (nebo `#hra`, `#protokol`, `#svet`, `#konec`) otevře rovnou danou obrazovku.
+- Přípona `#stul` (nebo `#hra`, `#propusteno`, `#lano`, `#protokol`, `#svet`, `#konec`) otevře rovnou danou obrazovku.
 
 ## Úpravy
 
