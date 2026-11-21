@@ -17,7 +17,8 @@ takže každý push do `main` se během minuty projeví na veřejné adrese.
 ## Kde co je
 - Hádanka: blok mezi `/*LOGIC-START*/` a `/*LOGIC-END*/` (`LEXICON`, `QUIPS`, `HINTS`, `evaluate`). Slovník má zůstat mezi 400 a 600 slovy.
 - Přechody mezi obrazovkami: `go(name)` s háčky `enter.*` a `leave.*`; časovače přes `later()`.
-- Přetahovaná o lano: konstanty `TUG_*`.
+- Přetahovaná o lano: konstanty `TUG_*`, kresba `dogTug()`, scéna se překresluje ve funkci `renderTug()`.
+- Náhled při sdílení: `og.jpg` (jediný soubor mimo `index.html`, bez něj náhled nejde), předloha `tools/og.html`, postup v README.
 - Kotvy v adrese pro ladění: `#hra`, `#propusteno`, `#lano`, `#protokol`, `#svet`, `#stul`, `#konec`.
 
 ## Ověření před pushem

@@ -26,6 +26,24 @@ Každý push do `main` se na adrese projeví zhruba do minuty.
 - Stránka má `noindex`, takže ji vyhledávače nezařadí. Kdo ale zná odkaz, ten ji otevře.
 - Přípona `#stul` (nebo `#hra`, `#propusteno`, `#lano`, `#protokol`, `#svet`, `#konec`) otevře rovnou danou obrazovku.
 
+## Náhled při sdílení
+
+Když někdo pošle odkaz do chatu (Messenger, WhatsApp, iMessage…), ukáže se obrázek `og.jpg` (1200 × 630).
+Předloha je `tools/og.html`: styly i kresby si bere přímo z `index.html`. Po změně vzhledu se obrázek vyrobí znovu takto:
+
+```powershell
+python -m http.server 8737
+```
+
+V druhém okně PowerShellu:
+
+```powershell
+& "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 --virtual-time-budget=8000 --screenshot="$PWD\og.png" http://localhost:8737/tools/og.html
+```
+
+Vzniklý `og.png` ulož jako `og.jpg` (kvalita kolem 90, ať má pod 300 kB) a nahraj. Chatovací aplikace si náhled
+pamatují, starý obrázek u už sdíleného odkazu může chvíli přetrvat.
+
 ## Úpravy
 
 Všechno je v `index.html`:
